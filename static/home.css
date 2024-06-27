@@ -1,0 +1,437 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+  }
+
+i{
+    font-size: 30px;
+    color: #5CE1E6;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: white; /* Cambia el color de fondo del encabezado a blanco o cualquier otro color que desees */
+}
+
+header{
+    position: fixed;
+    background-color: #5CE1E6;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
+  
+  .home-button-container{
+    padding-left: 20px;
+  }
+  
+  .search-container{
+    padding-left: 30px;
+    height: 40px;
+    position: relative;
+  
+  }
+  
+  .search-container input{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    outline: none;
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+  }
+  
+  .search-container img{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  
+  }
+  
+  .settings-button-container{
+    margin-left: auto;
+    margin-right: 20px;
+    
+  }
+/* Modifica este estilo para la clase Izquierda */
+.Izquierda {
+    background-color: white; /* Establece el color de fondo a negro */
+    padding: 20px; /* Ajusta el espacio interno según sea necesario */
+    width: 25%; /* Ajusta el ancho del div al 33% de la página */
+    height: 100vh; /* Establece la altura del div al 100% de la altura de la ventana */
+    position: fixed; /* Fija la posición del div para que permanezca visible mientras se desplaza por la página */
+    top: 80px; /* Ajusta la posición superior según sea necesario */
+    left: 0; /* Ajusta la posición izquierda a 0 para que comience desde el borde izquierdo */
+    margin-left: 20px;
+}
+
+
+/* Añade estilos adicionales si es necesario */
+
+
+/* Nombre de Perfil */
+.Mini_Perfil {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+    background-color: white; /* Agrega el fondo blanco al contenedor */
+    padding: 10px; /* Ajusta el espaciado interno según sea necesario */
+    border-radius: 8px; /* Bordes redondeados del contenedor */
+}
+
+
+/* Agrega este estilo para el formulario */
+.ProfileForm {
+    background-color: white; /* Color de fondo del formulario */
+    padding: 10px; /* Espaciado interno del formulario */
+    border-radius: 8px; /* Bordes redondeados del formulario */
+}
+
+.ProfileButton {
+    background-color: white; /* Color de fondo del enlace */
+    color: black; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina la subrayado predeterminado del enlace */
+    padding: 8px 12px; /* Espaciado interno del enlace */
+    border-radius: 5px; /* Bordes redondeados del enlace */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
+    margin-left: 10px; /* Ajusta el margen a la izquierda según sea necesario */
+    display: inline-block; /* Asegura que el enlace se comporte como bloque en línea */
+    outline: none; /* Elimina el contorno al seleccionar el enlace */
+    user-select: none; /* Evita la selección de texto al hacer clic en el enlace */
+}
+
+.ProfileButton:hover {
+    background-color: #e0e0e0; /* Cambia el color de fondo al pasar el mouse sobre el enlace */
+}
+
+
+/* Estilos para la clase Friends */
+.Friends {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+    background-color: white; /* Agrega el fondo blanco al contenedor */
+    padding: 10px; /* Ajusta el espaciado interno según sea necesario */
+    border-radius: 8px; /* Bordes redondeados del contenedor */
+}
+
+/* Agrega este estilo para el formulario de Friends */
+.FriendsForm {
+    background-color: white; /* Color de fondo del formulario */
+    padding: 10px; /* Espaciado interno del formulario */
+    border-radius: 8px; /* Bordes redondeados del formulario */
+}
+
+/* Agrega este estilo para el botón de Friends */
+.FriendsButton {
+    background-color: white; /* Color de fondo del enlace */
+    color: black; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina la subrayado predeterminado del enlace */
+    padding: 8px 12px; /* Espaciado interno del enlace */
+    border-radius: 5px; /* Bordes redondeados del enlace */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
+    margin-left: 10px; /* Ajusta el margen a la izquierda según sea necesario */
+    display: inline-block; /* Asegura que el enlace se comporte como bloque en línea */
+    outline: none; /* Elimina el contorno al seleccionar el enlace */
+    user-select: none; /* Evita la selección de texto al hacer clic en el enlace */
+}
+
+.FriendsButton:hover {
+    background-color: #e0e0e0; /* Cambia el color de fondo al pasar el mouse sobre el enlace */
+}
+
+/* Estilos para la clase Discover */
+.Discover {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+    background-color: white; /* Agrega el fondo blanco al contenedor */
+    padding: 10px; /* Ajusta el espaciado interno según sea necesario */
+    border-radius: 8px; /* Bordes redondeados del contenedor */
+}
+
+/* Agrega este estilo para el formulario de Discover */
+.DiscoverForm {
+    background-color: white; /* Color de fondo del formulario */
+    padding: 10px; /* Espaciado interno del formulario */
+    border-radius: 8px; /* Bordes redondeados del formulario */
+}
+
+/* Agrega este estilo para el botón de Discover */
+.DiscoverButton {
+    background-color: white; /* Color de fondo del enlace */
+    color: black; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina la subrayado predeterminado del enlace */
+    padding: 8px 12px; /* Espaciado interno del enlace */
+    border-radius: 5px; /* Bordes redondeados del enlace */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
+    margin-left: 10px; /* Ajusta el margen a la izquierda según sea necesario */
+    display: inline-block; /* Asegura que el enlace se comporte como bloque en línea */
+    outline: none; /* Elimina el contorno al seleccionar el enlace */
+    user-select: none; /* Evita la selección de texto al hacer clic en el enlace */
+}
+
+.DiscoverButton:hover {
+    background-color: #e0e0e0; /* Cambia el color de fondo al pasar el mouse sobre el enlace */
+}
+
+
+/* Estilos para la clase Saved */
+.Saved {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+    background-color: white; /* Agrega el fondo blanco al contenedor */
+    padding: 10px; /* Ajusta el espaciado interno según sea necesario */
+    border-radius: 8px; /* Bordes redondeados del contenedor */
+}
+
+/* Agrega este estilo para el formulario de Saved */
+.SavedForm {
+    background-color: white; /* Color de fondo del formulario */
+    padding: 10px; /* Espaciado interno del formulario */
+    border-radius: 8px; /* Bordes redondeados del formulario */
+}
+
+/* Agrega este estilo para el botón de Saved */
+.SavedButton {
+    background-color: white; /* Color de fondo del enlace */
+    color: black; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina la subrayado predeterminado del enlace */
+    padding: 8px 12px; /* Espaciado interno del enlace */
+    border-radius: 5px; /* Bordes redondeados del enlace */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
+    margin-left: 10px; /* Ajusta el margen a la izquierda según sea necesario */
+    display: inline-block; /* Asegura que el enlace se comporte como bloque en línea */
+    outline: none; /* Elimina el contorno al seleccionar el enlace */
+    user-select: none; /* Evita la selección de texto al hacer clic en el enlace */
+}
+
+.SavedButton:hover {
+    background-color: #e0e0e0; /* Cambia el color de fondo al pasar el mouse sobre el enlace */
+}
+
+/* Estilos para la clase Centro */
+/* Estilos para la clase Centro */
+.Centro {
+    background-color: white; /* Cambia el color de fondo a amarillo */
+    width: calc(70vw - 20vw); /* Ancho del centro al 70% del ancho de la ventana con un margen de 30px a la izquierda */
+    height: 100vh; /* Altura del centro al 100% de la altura de la ventana */
+    margin-left: 20vw; /* Añade un margen a la izquierda para separar del borde izquierdo */
+    display: flex; /* Utiliza flexbox para alinear elementos verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+/* Estilo para el nombre de usuario dentro de .CuadroDeTexto */
+.CuadroDeTexto .UserName {
+    margin-right: 150px; /* Ajusta el margen derecho según sea necesario */
+    margin-top: -10px; /* Ajusta el margen superior para subir el nombre de usuario */
+    color: #ffffff; /* Color blanco para el texto del nombre de usuario */
+}
+
+
+/* Estilo para el icono dentro de .CuadroDeTexto */
+.CuadroDeTexto i {
+    margin-right:300px; /* Ajusta el margen derecho del icono para moverlo al extremo izquierdo */
+    margin-bottom: -5px; /* Ajusta el margen inferior del icono para subirlo */
+}
+
+/* Estilo para el formulario dentro de .CuadroDeTexto */
+.CuadroDeTexto {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de flexión a columna */
+    align-items: center;
+    background-color: #007BFF; /* Fondo celeste para el formulario */
+    padding: 15px; /* Ajusta el espacio interno según sea necesario */
+    border-radius: 12px; /* Bordes redondeados del formulario */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+    width: 400px; /* Ancho del cuadro de texto */
+}
+
+/* Estilo para el cuadro de texto dentro de .CuadroDeTexto */
+.CuadroDeTexto a {
+    font-size: 18px; /* Ajusta el tamaño de la fuente del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: white; /* Color del texto del enlace (blanco) */
+    margin-top: 20px; /* Ajusta el margen superior del texto */
+    text-align: center; /* Centra el texto dentro del cuadro de texto */
+}
+
+/* Estilo para el botón dentro de .CuadroDeTexto */
+.CuadroDeTextoButton {
+    background-color: #007BFF; /* Color de fondo del enlace */
+    color: white; /* Color del texto del enlace (blanco) */
+    border: none; /* Elimina el borde del enlace */
+    padding: 10px 19px; /* Espaciado interno del enlace */
+    border-radius: 8px; /* Bordes redondeados del enlace */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
+}
+
+/* Nombre de Perfil */
+.FriendName {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de flexión a columna */
+    align-items: center;
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+    background-color: white; /* Agrega el fondo blanco al contenedor */
+    padding: 20px; /* Ajusta el espaciado interno según sea necesario */
+    border-radius: 8px; /* Bordes redondeados del contenedor */
+}
+
+/* Agrega este estilo para el formulario */
+.ProfileForm1 {
+    background-color: white; /* Color de fondo del formulario */
+    padding: 10px; /* Espaciado interno del formulario */
+    border-radius: 8px; /* Bordes redondeados del formulario */
+}
+
+
+
+/* Estilo para la clase Derecha */
+.Derecha {
+    background-color: white; /* Establece el color de fondo a negro */
+    padding: 20px; /* Ajusta el espacio interno según sea necesario */
+    width: 25%; /* Ajusta el ancho del div al 33% de la página */
+    /* Establece la altura del div al 100% de la altura de la ventana */
+    position: fixed; /* Fija la posición del div para que permanezca visible mientras se desplaza por la página */
+    top: 80px; /* Ajusta la posición superior según sea necesario */
+    right: 0; /* Ajusta la posición derecha a 0 para que comience desde el borde derecho */
+    padding-top: 50px;
+    
+}
+
+/* Estilo para el título Chat */
+.ChatTitle {
+    font-size: 24px; /* Ajusta el tamaño del título según sea necesario */
+    color: black; /* Color del texto del título */
+    margin-bottom: 20px; /* Espaciado inferior del título */
+}
+
+
+/* Estilo para el formulario dentro de .FriendName */
+.ProfileForm1 {
+    background-color: white; /* Color de fondo del formulario */
+    padding: 20px; /* Espaciado interno del formulario */
+    border-radius: 8px; /* Bordes redondeados del formulario */
+    margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+}
+
+/* Estilo para el enlace dentro de .FriendName */
+.Friend {
+    font-size: 18px; /* Ajusta el tamaño de la fuente del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: black; /* Color del texto del enlace */
+}
+
+/* Estilo para el icono dentro de .FriendName */
+.Friend i {
+    margin-right: 20px; /* Ajusta el margen derecho del icono según sea necesario */
+}
+
+/* Estilo para el formulario dentro de .FriendName */
+.ProfileForm11 {
+    background-color: white; /* Color de fondo del formulario */
+    padding: 20px; /* Espaciado interno del formulario */
+    border-radius: 8px; /* Bordes redondeados del formulario */
+    margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+}
+
+/* Estilo para el enlace dentro de .FriendName */
+.Friend1 {
+    font-size: 18px; /* Ajusta el tamaño de la fuente del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: black; /* Color del texto del enlace */
+}
+
+/* Estilo para el icono dentro de .FriendName */
+.Friend i {
+    margin-right: 20px; /* Ajusta el margen derecho del icono según sea necesario */
+}
+
+.ProfileForm111 {
+    background-color: white; /* Color de fondo del formulario */
+    padding: 20px; /* Espaciado interno del formulario */
+    border-radius: 8px; /* Bordes redondeados del formulario */
+    margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+}
+
+/* Estilo para el enlace dentro de .FriendName */
+.Friend11 {
+    font-size: 18px; /* Ajusta el tamaño de la fuente del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: black; /* Color del texto del enlace */
+}
+
+/* Estilo para el icono dentro de .FriendName */
+.Friend i {
+    margin-right: 20px; /* Ajusta el margen derecho del icono según sea necesario */
+}
+
+
+
+.horizontal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+  
+}
+  
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+  }
+  
+.posts-container{
+    padding-top: 50px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+.post-container{
+    background-color: #5CE1E6;
+    color: white;
+    width: 80%;
+    padding: 20px 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+  
+.post-title{
+    width: 100%;
+    align-items: flex-start;
+  }
+  
+.bold{
+    font-weight: bold;
+  }
+  
+  
+.post-content-container{
+    width: 80%;
+    margin: auto 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.friend-widget{
+    padding-top: 70px;
+  
+}
+.Derecha label{
+    padding-left: 20px;
+}
+

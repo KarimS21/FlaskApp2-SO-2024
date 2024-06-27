@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+header{
+  position: fixed;
+  background-color: #5CE1E6;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.home-button-container{
+  padding-left: 20px;
+}
+
+.search-container{
+  padding-left: 30px;
+  height: 40px;
+  position: relative;
+
+}
+
+.search-container input{
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  outline: none;
+  border-style: solid;
+  border-color: white;
+  border-radius: 20px;
+}
+
+.search-container img{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.settings-button-container{
+  margin-left: auto;
+  margin-right: 20px;
+  
+}
+
+
+body{
+
+  width: 100%;
+}
+main{
+  width: 100%;
+}
+
+.banner-container{
+  margin: 0 auto;
+  width: 80%;
+  min-width: 457px;
+  height: 55vh;
+  min-height: 300px;
+  background-color: #0097B2;
+  border-radius: 40px;
+
+
+}
+
+.element-container{
+  display: flex;
+  align-items:flex-end;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  color: white;
+}
+
+.element-container h1{
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.element-container button{
+  width: 70px;
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  font-size: large;
+}
+
+.element-container #follow-button{
+  margin-left: auto;
+}
+.element-container #chat-button{
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+
+.main-container{
+  padding-top: 50px;
+  width: 80%;
+  min-width: 457px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.horizontal{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-self: center;
+
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
+.widgets{
+  width: 50%;
+  padding-right: 100px;
+}
+.widgets img{
+  margin-right: 20px;
+}
+.widgets .friend-widget{
+  padding-top: 20px;
+
+}
+
+.posts-container{
+  width: 50%;
+}
+
+.post-container{
+  background-color: #5CE1E6;
+  color: white;
+  width: 80%;
+  padding: 20px 20px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.post-title{
+  width: 100%;
+  align-items: flex-start;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+
+.post-content-container{
+  width: 80%;
+  margin: auto 0;
+  text-align: center;
+  padding-bottom: 20px;
+}

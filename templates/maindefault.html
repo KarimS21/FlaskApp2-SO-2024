@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Principal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #000000;
+      color: #fff;
+      padding: 10px 20px;
+    }
+
+    .content {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .content h1 {
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div id="navbarContainer"></div>
+</header>
+
+<main>
+  <section class="content">
+    <h1>main</h1>
+    <p>contenido</p>
+  </section>
+</main>
+
+<script>
+  
+  const navbarContainer = document.getElementById('navbarContainer');
+
+  fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      navbarContainer.innerHTML = data;
+    })
+    .catch(error => {
+      console.error('Error al cargar el navbar:', error);
+    });
+</script>
+
+</body>
+</html>

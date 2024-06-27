@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/profile.css">
+  <title></title>
+</head>
+<body>
+  <header>
+    <div class="home-button-container">
+      <a href="/templates/home.html"><img src="/static/home.png" alt=""  width="30px" height="30px"></a>
+    </div>
+    <form action="/profile" method="post">
+      <div class="search-container">
+        <input type="text" placeholder="Username" required name="usuario">
+        <img src="/static/lupa.png" alt=""  width="20px" height="20px">
+      </div>
+    </form>
+    <div class="settings-button-container">
+      <a href=""><img src="/static/setting.png" width="40px" height="40px" alt=""></a>
+    </div>
+  </header>
+
+  <main>
+    <div class="banner-container">
+      <div class="element-container">
+        <img src="/static/user.png" alt="" width="100px" height="100px">
+        <h1>{{usuario}}</h1>
+        <form action="/agregar"> <button type="submit" id="follow-button"  >Follow</button></form>
+        <form action="/chat"><button type="submit" id="chat-button">Chat</button> </form>
+      </div>
+      
+    </div>
+    
+    <div class="main-container">
+
+      <div class="widgets center">
+        <div class="friends-title horizontal">
+          
+          <img src="/static/friends.png" alt="" width="50px" height="50px" style="margin-bottom: 20px;"> 
+          <h2>Friends</h2>
+        </div>
+
+        <div class="friend-widget horizontal">
+          <img src="/static/user.png" alt="" width="30px" height="30px">
+          <label>User name</label>
+        </div>
+        <div class="friend-widget horizontal">
+          <img src="/static/user.png" alt="" width="30px" height="30px">
+          <label>User name</label>
+        </div>
+        <div class="friend-widget horizontal">
+          <img src="/static/user.png" alt="" width="30px" height="30px">
+          <label>User name</label>
+        </div>
+        <div class="friend-widget horizontal">
+          <img src="/static/user.png" alt="" width="30px" height="30px">
+          <label>User name</label>
+        </div>
+
+      </div>
+
+      <div class="posts-container center">
+        <h2 style="margin-bottom: 30px;">Posts</h2>
+
+        <div class="post-container center" >
+          <div class="horizontal post-title">
+            <img src="/static/user_white.png" alt="" width="30px" height="30px">
+            <h3 style="margin-left: 20px;">Username</h3>
+          </div>
+          <div class="post-content-container" style="margin-top: 20px;">
+            <p class="post-content bold">
+                What a great day to play some music :)
+            </p>
+          </div>
+        </div>
+
+
+        <div class="post-container center" >
+          <div class="horizontal post-title">
+            <img src="/static/user_white.png" alt="" width="30px" height="30px">
+            <h3 style="margin-left: 20px;">Username</h3>
+          </div>
+          <div class="post-content-container" style="margin-top: 20px;">
+            <p class="post-content bold">
+                What a great day to play some music :)
+            </p>
+          </div>
+        </div>
+
+
+        <div class="post-container center" >
+          <div class="horizontal post-title">
+            <img src="/static/user_white.png" alt="" width="30px" height="30px">
+            <h3 style="margin-left: 20px;">Username</h3>
+          </div>
+          <div class="post-content-container" style="margin-top: 20px;">
+            <p class="post-content bold">
+                What a great day to play some music :)
+            </p>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+    
+
+
+  </main>
+
+  <footer style="height: 50px;">
+
+  </footer>
+
+</body>
+</html>

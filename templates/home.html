@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pestaña Principal-MagtimusPro</title>   
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="home-button-container">
+          <a href="/templates/home.html"><img src="/static/home.png" alt=""  width="30px" height="30px"></a>
+        </div>
+        <form action="/profile" method="post" >
+          <div class="search-container">
+            <input type="text" placeholder="Username" required name="usuario">
+            <img src="/static/lupa.png" alt=""  width="20px" height="20px">
+          </div>
+        </form>
+        <div class="settings-button-container">
+          <a href=""><img src="/static/setting.png" width="40px" height="40px" alt=""></a>
+        </div>
+    </header>
+    <main>   
+        <div class="Izquierda">
+            <div class="Mini_Perfil">
+                <!-- Contenido del Mini_Perfil, como el icono y el formulario -->
+                <i class='bx bxs-user'></i>
+                <!-- Formulario para el enlace de perfil -->
+                <form class="ProfileForm">
+                    <a href="#" class="ProfileButton">Profile Name</a>
+                </form>
+                <!-- Formulario para el enlace de perfil -->
+            </div> 
+            <div class="Friends">
+                <!-- Contenido de Friends, como el icono y el formulario -->
+                <i class='bx bxs-group'></i>
+                <!-- Formulario para el botón de Friends -->
+                <form class="FriendsForm">
+                    <a href="#" class="FriendsButton">Friends</a>
+                </form>
+                <!-- Formulario para el botón de Friends -->
+            </div>
+            <div class="Discover">
+                <!-- Contenido de Discover, como el icono y el formulario -->
+                <i class='bx bxs-compass'></i>
+                <!-- Formulario para el botón de Discover -->
+                <form class="DiscoverForm">
+                    <a href="#" class="DiscoverButton">Discover</a>
+                </form>
+                <!-- Formulario para el botón de Discover -->
+            </div>
+            <div class="Saved">
+                <!-- Contenido de Saved, como el icono y el formulario -->
+                <i class='bx bxs-bookmark-star'></i>
+                <!-- Formulario para el botón de Saved -->
+                <form class="SavedForm">
+                    <a href="#" class="SavedButton">Friends</a>
+                </form>
+                <!-- Formulario para el botón de Saved -->
+            </div>             
+        </div> 
+        <div class="posts-container center">
+            <h2 style="margin-bottom: 30px;">Posts</h2>
+    
+            <div class="post-container center" >
+              <div class="horizontal post-title">
+                <img src="/static/user_white.png" alt="" width="30px" height="30px">
+                <h3 style="margin-left: 20px;">Username</h3>
+              </div>
+              <div class="post-content-container" style="margin-top: 20px;">
+                <p class="post-content bold">
+                    What a great day to play some music :)
+                </p>
+              </div>
+            </div>
+    
+    
+            <div class="post-container center" >
+              <div class="horizontal post-title">
+                <img src="/static/user_white.png" alt="" width="30px" height="30px">
+                <h3 style="margin-left: 20px;">Username</h3>
+              </div>
+              <div class="post-content-container" style="margin-top: 20px;">
+                <p class="post-content bold">
+                    What a great day to play some music :)
+                </p>
+              </div>
+            </div>
+    
+    
+            <div class="post-container center" >
+              <div class="horizontal post-title">
+                <img src="/static/user_white.png" alt="" width="30px" height="30px">
+                <h3 style="margin-left: 20px;">Username</h3>
+              </div>
+              <div class="post-content-container" style="margin-top: 20px;">
+                <p class="post-content bold">
+                    What a great day to play some music :)
+                </p>
+              </div>
+            </div>
+    
+            
+    
+          </div>                
+        <div class="center Derecha">
+            <h2 class="ChatTitle">Chats</h2>
+            <div class="friend-widget horizontal">
+                <img src="/static/user.png" alt="" width="30px" height="30px">
+                <label>User name</label>
+            </div>  
+
+            <div class="friend-widget horizontal">
+                <img src="/static/user.png" alt="" width="30px" height="30px">
+                <label>User name</label>
+            </div>
+
+            <div class="friend-widget horizontal">
+                <img src="/static/user.png" alt="" width="30px" height="30px">
+                <label>User name</label>
+            </div>
+
+            <div class="friend-widget horizontal">
+                <img src="/static/user.png" alt="" width="30px" height="30px">
+                <label>User name</label>
+            </div>
+
+        </div>        
+    </main>
+</body>
+</html>   

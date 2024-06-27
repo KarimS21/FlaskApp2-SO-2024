@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style scoped>
+   
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #000000;
+      color: #fff;
+      padding: 10px 20px;
+    }
+
+    .navbar-logo a {
+      color: #fff;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    .navbar-nav {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-item {
+      padding: 10px;
+    }
+
+    .nav-item a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: #056085;
+      padding: 10px;
+      list-style-type: none;
+    }
+
+    .dropdown-menu li {
+      padding: 5px;
+    }
+
+    .dropdown-menu li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  </style>
+</head>
+
+
+<nav class="navbar">
+  <div class="navbar-logo">
+    <a href="maindefault.html">ConectaNet</a>
+  </div>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a href="maindefault.html">Inicio</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a href="#">Configuración &#9660;</a>
+      <ul class="dropdown-menu">
+        <li><a href="ui.html">Perfil</a></li>
+
+      </ul>
+    </li>
+ 
+  </ul>
+</nav>
+
+
+</html>
