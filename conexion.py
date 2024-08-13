@@ -6,7 +6,7 @@ import bson
 class Conexion:
     def __init__(self):
         load_dotenv()
-        self.MONGO_URL=os.environ['MONGODB_URL3']
+        self.MONGO_URL=os.environ['MONGODB_URL2']
     def connectionDB(self):
         try:
             client = MongoClient(self.MONGO_URL)
